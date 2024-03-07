@@ -26,6 +26,10 @@ for (let i = 1; i <= 100; i++) { // Creiamo un ciclo che ci permetta di stampare
 
     if (i % 3 === 0 && i % 5 === 0) {
         listNumbersAndString.classList.add('box-three-five')
+    } else if (i % 3 === 0) {
+        listNumbersAndString.classList.add('box-three')
+    } else if (i % 5 === 0) {
+        listNumbersAndString.classList.add('box-five')
         console.log(listNumbersAndString);
     }
 

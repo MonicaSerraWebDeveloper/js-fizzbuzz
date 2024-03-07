@@ -44,4 +44,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #1389b2;
+}
+
+.box-three-five {
+    background-color: #f0466f;
+}
+
+.box-three {
+    background-color: #0cd6a1;
+}
+
+.box-five {
+    background-color: #ffd166;
 }
