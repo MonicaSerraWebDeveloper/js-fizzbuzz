@@ -20,13 +20,28 @@ body {
 }
 
 /*-------------------
+        TYPOGRAPHY
+---------------------*/
+
+h2 {
+    font-size: 50px;
+}
+
+
+/*-------------------
         CONTAINER
 ---------------------*/
 
+.title-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
 .box-container {
     max-width: 900px;
-    border: 2px solid red;
     margin: 0 auto;
+    margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -40,11 +55,11 @@ body {
 .box {
     height: 100px;
     width: 100px;
-    border: 2px solid blue;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #1389b2;
+    cursor: pointer;
 }
 
 .box-three-five {
