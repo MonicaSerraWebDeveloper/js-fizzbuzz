@@ -21,8 +21,12 @@ for (let i = 1; i <= 100; i++) { // Creiamo un ciclo che ci permetta di stampare
 
     const listNumbersAndString = document.createElement('div'); // Creiamo un div per ogni elemento presente nel ciclo for con le sue condizioni
     listNumbersAndString.innerHTML = multipleNumber;
+    listNumbersAndString.classList.add('box');
     console.log(listNumbersAndString);
     divContainer.append(listNumbersAndString);
+
+    
+
 };
 
 
@@ -30,3 +34,8 @@ for (let i = 1; i <= 100; i++) { // Creiamo un ciclo che ci permetta di stampare
 //BONUS 1:
 // Crea un container nel DOM, 
 // aggiungendo un elemento html con il numero o la stringa corretta da mostrare.
+
+
+// BONUS 2:
+// Applica stili differenti agli elementi aggiunti al DOM nel *BONUS 1*, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
+// Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna.
