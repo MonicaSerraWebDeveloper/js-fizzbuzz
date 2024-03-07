@@ -4,8 +4,9 @@
 // Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 
 
-// Creiamo un ciclo che ci permetta di stampare in console i numeri da 1 a 100
-for (let i = 1; i <= 100; i++) {
+const divContainer = document.querySelector('.box-container'); // Creare una variabile per contenere un div con una classe
+
+for (let i = 1; i <= 100; i++) { // Creiamo un ciclo che ci permetta di stampare in console i numeri da 1 a 100
 
     let multipleNumber;
     if (i % 3 === 0 && i % 5 === 0) { // Andiamo a stabilire con if che i multipli sia di 3 che di 5 gli venga assegnata la stringa "FizzBuzz"
@@ -17,7 +18,15 @@ for (let i = 1; i <= 100; i++) {
     } else { // Per tutti numeri restanti andiamo a dargli il valore numerico corrispondente a i
         multipleNumber = i; 
     }      
-    console.log(multipleNumber);
+
+    const listNumbersAndString = document.createElement('div'); // Creiamo un div per ogni elemento presente nel ciclo for con le sue condizioni
+    listNumbersAndString.innerHTML = multipleNumber;
+    console.log(listNumbersAndString);
+    divContainer.append(listNumbersAndString);
 };
 
 
+
+//BONUS 1:
+// Crea un container nel DOM, 
+// aggiungendo un elemento html con il numero o la stringa corretta da mostrare.
