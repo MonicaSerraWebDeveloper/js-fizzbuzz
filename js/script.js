@@ -22,10 +22,12 @@ for (let i = 1; i <= 100; i++) { // Creiamo un ciclo che ci permetta di stampare
     const listNumbersAndString = document.createElement('div'); // Creiamo un div per ogni elemento presente nel ciclo for con le sue condizioni
     listNumbersAndString.innerHTML = multipleNumber;
     listNumbersAndString.classList.add('box');
-    console.log(listNumbersAndString);
     divContainer.append(listNumbersAndString);
 
-    
+    if (i % 3 === 0 && i % 5 === 0) {
+        listNumbersAndString.classList.add('box-three-five')
+        console.log(listNumbersAndString);
+    }
 
 };
 
