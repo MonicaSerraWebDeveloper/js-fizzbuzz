@@ -58,8 +58,11 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1389b2;
     cursor: pointer;
+}
+
+.primary-color {
+    background-color: #1389b2;
 }
 
 .box-three-five {

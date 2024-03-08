@@ -8,15 +8,20 @@ const divContainer = document.querySelector('.box-container'); // Creare una var
 
 for (let i = 1; i <= 100; i++) { // Creiamo un ciclo che ci permetta di stampare in console i numeri da 1 a 100
 
+    let classCssColor;  // BONUS 2:
     let multipleNumber;
     if (i % 3 === 0 && i % 5 === 0) { // Andiamo a stabilire con if che i multipli sia di 3 che di 5 gli venga assegnata la stringa "FizzBuzz"
         multipleNumber = 'BuzzFizz';
+        classCssColor = 'box-three-five';
     }  else if (i % 3 === 0) { // Andiamo a stabilire con else if che i multipli di 3 gli venga assegnata la stringa "Fizz"
         multipleNumber = 'Fizz';
+        classCssColor = 'box-three';
     } else if (i % 5 === 0) { // Andiamo a stabilire con else if che i multipli di 5 gli venga assegnata la stringa "Buzz"
         multipleNumber = 'Buzz';
+        classCssColor = 'box-five';
     } else { // Per tutti numeri restanti andiamo a dargli il valore numerico corrispondente a i
         multipleNumber = i; 
+        classCssColor = 'primary-color';
     }      
 
     //BONUS 1:
@@ -24,18 +29,8 @@ for (let i = 1; i <= 100; i++) { // Creiamo un ciclo che ci permetta di stampare
     const listNumbersAndString = document.createElement('div'); // Creiamo un div per ogni elemento presente nel ciclo for con le sue condizioni
     listNumbersAndString.innerHTML = multipleNumber;
     listNumbersAndString.classList.add('box');
+    listNumbersAndString.classList.add(classCssColor);
     divContainer.append(listNumbersAndString);
-
-    // BONUS 2:
-
-    if (i % 3 === 0 && i % 5 === 0) {
-        listNumbersAndString.classList.add('box-three-five')
-    } else if (i % 3 === 0) {
-        listNumbersAndString.classList.add('box-three')
-    } else if (i % 5 === 0) {
-        listNumbersAndString.classList.add('box-five')
-        console.log(listNumbersAndString);
-    }
 
 };
 
